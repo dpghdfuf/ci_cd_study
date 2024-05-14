@@ -102,7 +102,7 @@
 #             sudo docker stop ${{ env.CURRENT_UPSTREAM }}
 #             sudo docker rm ${{ env.CURRENT_UPSTREAM }}
       
-name: CI
+name: CICD
 
 on:
   push:
