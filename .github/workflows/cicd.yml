@@ -50,7 +50,6 @@ jobs:
             CURRENT_UPSTREAM=green
           fi
           echo CURRENT_UPSTREAM=${{ env.CURRENT_UPSTREAM }} >> $GITHUB_ENV
-          # echo CURRENT_UPSTREAM=$CURRENT_UPSTREAM >> $GITHUB_ENV
           if [ $CURRENT_UPSTREAM = blue ]; then
             echo "CURRENT_PORT=8080" >> $GITHUB_ENV
             echo "STOPPED_PORT=9090" >> $GITHUB_ENV
